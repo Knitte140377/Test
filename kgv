@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a = 11;
+    int b = 8;
+
+    int c = b;
+    if(a >= b)
+    c = a;
+    printf("%d\n",c);
+ 
+    
+    int d = 0;
+    
+    for(int i=2;i<c;i++)
+    {
+            if(a % i==0 && b % i==0) 
+            {
+            printf("%d\n",i);
+            a/=i;
+            b/=i;
+            i=1;
+            }
+    }
+
+	return 0;
+}
